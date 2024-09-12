@@ -1,0 +1,12 @@
+.custom-rorate{
+    transform: rotate(-45deg);
+}
+.letter-spacing{
+    letter-spacing: 0.2em;
+}
+.background-color-body{
+    background-color: #0b0c2a;
+}
+.background-color-header{
+    background-color: #070720;
+}

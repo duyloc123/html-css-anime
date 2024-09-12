@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/db6ac4acea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Anime | Template</title>
+</head>
+<body class="background-color-body font-serif relative">
+    <!-- Header -->
+    <div>
+        <nav class="bg-white border-slate-200 dark:bg-slate-900 dark:border-slate-700">
+            <div class="h-16 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
+                    <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/logo.png" class="w-24,h-6" alt="Anime Logo" />
+                    </a>
+              <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+              <div class="hidden w-full h-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="h-16 flex flex-col font-semibold p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li class="my-auto">
+                    <a href="./index.html" class="block py-2 px-3 text-gray-300 bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 md:dark:text-red-500 dark:bg-red-600 md:dark:bg-transparent font-sans text-[18px]" aria-current="page">Homepage</a>
+                  </li>
+                  <li class="my-auto group relative">
+                      <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-400 ease-in duration-300 rounded hover:text-white md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-300 md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700  md:dark:hover:text-white font-sans text-[18px]">Categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg></button>
+                      <!-- Dropdown menu -->
+                      <div id="dropdownNavbar" class="absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white dark:divide-gray-600 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 mt-5">
+                          <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                            <li>
+                              <a href="./categories.html" class="block px-4 py-2 text-black font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ease-in duration-300 font-sans">Categories</a>
+                            </li>
+                            <li>
+                              <a href="./anime-details.html" class="block px-4 py-2 text-black font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ease-in duration-300 font-sans">Anime Details</a>
+                            </li>
+                            <li>
+                              <a href="./anime-watching.html" class="block px-4 py-2 text-black font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ease-in duration-300 font-sans">Anime Watching</a>
+                            </li>
+                            <li>
+                                <a href="./blog-detail.html" class="block px-4 py-2 text-black font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ease-in duration-300 font-sans">Blog Details</a>
+                              </li>
+                          </ul>
+                          <div class="py-1">
+                            <a href="./sign-up.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-500 dark:hover:text-white ease-in duration-300 font-sans">Sign up</a>
+                            <a href="./login.html" class="block px-4 py-2 text-sm text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-500 dark:hover:text-white ease-in duration-300 font-sans">Login</a>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="my-auto">
+                    <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:text-white ease-in duration-300 md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-300 md:dark:hover:text-red-500 dark:hover:text-white dark:hover:
+                    text-gray-300 md:dark:hover:text-white font-sans text-[18px]" >Our Blog</a>
+                  </li>
+                  <li class="my-auto">
+                    <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:text-white ease-in duration-300 md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-300 md:dark:hover:text-red-500 dark:hover:text-white dark:hover:
+                    text-gray-300 md:dark:hover:text-white font-sans text-[18px]">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <div class="my-2 flex px-4 py-3 rounded-md border-2 border-blue-500 overflow-hidden max-w-md mx-auto font-[sans-serif]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
+                      class=" fill-slate-500 mr-3 rotate-90">
+                      <path
+                        d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+                      </path>
+                    </svg>
+                    <input type="email" placeholder="Search Here..." class="w-full outline-none bg-transparent text-white text-sm" />
+                </div> 
+              </div>
+              <div class="h-full py-5">
+                <a href="./login.html">
+                    <i class="fa-solid fa-user text-white"></i>
+                </a>
+              </div>
+            </div>
+        </nav>  
+    </div>
+    <!-- Blog Title -->
+     <div class="pt-10">
+        <div class="max-w-screen-xl mx-auto sm:px-4 lg:px-4">
+            <div class="w-full flex flex-col items-center max-sm:px-4">
+                <div class="max-w-[780px] max-sm:px-4">
+                    <div class="w-full text-center">
+                        <p class="text-gray-700 text-3 font-sans"><span class="text-white font-bold text-4 uppercase font-sans">Action, Magic</span>- March 08, 2020</p>
+                    </div>
+                    <h1 class="text-white font-bold text-[48px] font-sans text-center ">Anime for Beginers: 20 Pieces of Essential Viewing</h1>
+                    <!-- Icon -->
+                     <div class="text-white font-sans text-4 mt-8">
+                        <ul class="flex flex-row gap-6 justify-center">
+                            <li class="px-5 py-4 bg-blue-700 rounded"><a href="">
+                            <i class="fa fa-facebook-square mr-3">
+                            </i>Facebook</a></li>
+                            <li class="px-5 py-4 bg-red-500 rounded"><a href="">
+                            <i class="fa fa-pinterest mr-3"></i>
+                            Pinterest</a></li>
+                            <li class="px-5 py-4 bg-sky-800 rounded"><a href="">
+                            <i class="fa fa-linkedin-square"></i>
+                            Likedin</a></li>
+                            <li class="px-5 py-4 bg-sky-600 rounded"><a href="">
+                            <i class="fa fa-linkedin-square"></i>
+                            Twitter</a></li>
+                        </ul>
+                     </div>
+                </div>
+                <!-- Image Blog -->
+                <div class="max-w-[1140px] pt-10 max-sm:px-4">
+                    <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/details/blog-details-pic.jpg" alt="imageBlog" class="w-full h-full">
+                </div>
+                <!-- Content Blog  -->
+                <div class="pt-10 max-w-[780px] max-sm:px-4">
+                    <p class="text-white font-sans text-[17px] mb-6 leading-relaxed">As a result the last couple of eps haven’t been super exciting for me, because they’ve been more like settling into a familiar and comfortable routine.  We’re seeing character growth here but it’s subtle (apart from Shouyou, arguably).  I mean, Tobio being an asshole is nothing new – it’s kind of the foundation of his entire character arc.  Confronting whether his being an asshole is a problem for the Crows this directly is a bit of an evolution, and probably an overdue one at that, but the overall dynamic with Kageyama is basically unchanged.</p>
+                    <h4 class="text-white font-sans text-[25px] font-bold mb-6">Tobio-Nishinoya Showdown:</h4>
+                    <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/details/bd-item-1.jpg" alt="" class="w-full h-full mb-6">
+                    <p class="text-white font-sans text-[17px] mb-6 leading-relaxed">In Japan the idea of a first-year speaking to a senior the way Kageyama did to Asahi is a lot more shocking than it would be in the West, but Tobio calling out teammates in genuinely rude fashion in the middle of a match is what got him isolated in the first place.  It’s better for the Crows to sort this out in practice matches than the real deal, but this is really on Tobio – he has to figure out how to co-exist with others in a team environment.</p>
+                    <h4 class="text-white font-sans text-[25px] font-bold mb-6">Nanatsu no Taizai: Kamigami No Gekirin</h4>
+                    <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/details/bd-item-2.jpg" alt="" class="w-full h-full mb-6">
+                    <p class="text-white font-sans text-[17px] mb-6 leading-relaxed">In Japan the idea of a first-year speaking to a senior the way Kageyama did to Asahi is a lot more shocking than it would be in the West, but Tobio calling out teammates in genuinely rude fashion in the middle of a match is what got him isolated in the first place.  It’s better for the Crows to sort this out in practice matches than the real deal, but this is really on Tobio – he has to figure out how to co-exist with others in a team environment.</p>
+                    <h4 class="text-white font-sans text-[25px] font-bold mb-6">ID:Ianvaded:</h4>
+                    <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/details/bd-item-3.jpg" alt="" class="w-full h-full mb-6">
+                    <p class="text-white font-sans text-[17px] mb-6 leading-relaxed">In Japan the idea of a first-year speaking to a senior the way Kageyama did to Asahi is a lot more shocking than it would be in the West, but Tobio calling out teammates in genuinely rude fashion in the middle of a match is what got him isolated in the first place.  It’s better for the Crows to sort this out in practice matches than the real deal, but this is really on Tobio – he has to figure out how to co-exist with others in a team environment.</p>
+                    <!-- Blog Tag -->
+                    <div class="">
+                        <a href="" class="w-auto h-auto font-sans text-gray-400 uppercase font-medium letter-spacing px-[6px] py-2 bg-gray-800 rounded-md text-[12px] hover:text-white ease-in duration-300 mr-2">Healthfood</a>
+                        <a href="" class="w-auto h-auto font-sans text-gray-400 uppercase font-medium letter-spacing px-[6px] py-2 bg-gray-800 rounded text-[12px] hover:text-white ease-in duration-300 mr-2">Sport</a>
+                        <a href="" class="w-auto h-auto font-sans text-gray-400 uppercase font-medium letter-spacing px-[6px] py-2 bg-gray-800 rounded text-[12px] hover:text-white ease-in duration-300">Game</a>
+                    </div>
+                    <!-- Blog Pagination -->
+                    <div class="pt-10 max-w-[780px] max-sm:px-4 ">
+                        <div class="flex justify-between border-y-[1px] border-gray-700 py-5">
+                            <!-- Previous Button -->
+                            <a href="#" class="flex items-center justify-center px-4 h-10 me-3 text-[17px] font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white ease-in duration-300 font-sans">
+                              <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                              </svg>
+                              Building a better Lia....
+                            </a>
+                            <a href="#" class="flex items-center justify-center px-4 h-10 me-3 text-[17px] font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white ease-in duration-300 font-sans">
+                              Mugen no Juunin: Immortal - 21
+                              <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                              </svg>
+                            </a>
+                          </div>
+                    </div>
+                    <!-- Blog Commtent -->
+                    <div class="pt-10 max-w-[780px] max-sm:px-4">
+                        <h1 class="text-white text-[24px] font-bold font-sans">3 Comments</h1>
+                        <div>
+                            <div class="mt-10 flex flex-col">
+                                <!-- Comment 1 -->
+                                <div class="flex">
+                                    <img class="w-auto h-[70px] rounded-full" src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/details/comment-1.png" alt="Rounded avatar">
+                                    <div class="pl-4 rounded-lg text-white z-30 font-sans w-full">
+                                        <p class="text-gray-400">Sep 08, 2020</p>
+                                        <h4 class="font-bold">John Smith</h4>
+                                        <p class="text-gray-300 mt-2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>
+                                        <div class="w-6 h-6">
+                                        </div>
+                                        <div class="mt-2">
+                                            <a href="#">
+                                                <span class="w-auto h-auto px-4 text-center py-3 bg-slate-700 text-white tracking-widest font-medium text-sm rounded font-sans hover:bg-red-500 ease-in duration-300 mr-5">Like</span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="w-auto h-auto px-4 text-center py-3 bg-slate-700 text-white tracking-widest font-medium text-sm rounded font-sans hover:bg-red-500 ease-in duration-300">Reply</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment 2 -->
+                                <div class="flex mt-14 pl-[110px]">
+                                    <img class="w-auto h-[70px] rounded-full" src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/details/comment-2.png" alt="Rounded avatar">
+                                    <div class="pl-4 rounded-lg text-white z-30 font-sans w-full">
+                                        <p class="text-gray-400">Sep 08, 2020</p>
+                                        <h4 class="font-bold">Elizabeth Perry</h4>
+                                        <p class="text-gray-300 mt-2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>
+                                        <div class="w-6 h-6">
+                                        </div>
+                                        <div class="mt-2">
+                                            <a href="#">
+                                                <span class="w-auto h-auto px-4 text-center py-3 bg-slate-700 text-white tracking-widest font-medium text-sm rounded font-sans hover:bg-red-500 ease-in duration-300 mr-5">Like</span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="w-auto h-auto px-4 text-center py-3 bg-slate-700 text-white tracking-widest font-medium text-sm rounded font-sans hover:bg-red-500 ease-in duration-300">Reply</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment 3 -->
+                                <div class="flex mt-14">
+                                    <img class="w-auto h-[70px] rounded-full" src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/details/comment-3.png" alt="Rounded avatar">
+                                    <div class="pl-4 rounded-lg text-white z-30 font-sans w-full">
+                                        <p class="text-gray-400">Sep 08, 2020</p>
+                                        <h4 class="font-bold">Adrian Coleman</h4>
+                                        <p class="text-gray-300 mt-2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>
+                                        <div class="w-6 h-6">
+                                        </div>
+                                        <div class="mt-2">
+                                            <a href="#">
+                                                <span class="w-auto h-auto px-4 text-center py-3 bg-slate-700 text-white tracking-widest font-medium text-sm rounded font-sans hover:bg-red-500 ease-in duration-300 mr-5">Like</span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="w-auto h-auto px-4 text-center py-3 bg-slate-700 text-white tracking-widest font-medium text-sm rounded font-sans hover:bg-red-500 ease-in duration-300">Reply</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Form -->
+                     <div class="pt-14 max-w-[780px] max-sm:px-4">
+                        <div class="w-full border-t-[1px] pt-10 border-gray-700">
+                            <h1 class="text-white text-[24px] font-bold font-sans">Leave A Comment</h1>
+                            <form action="#">
+                                <div class="flex gap-10 mt-5">
+                                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-4 block w-full p-2.5 outline-none text-gray-600" placeholder="Name" required />
+                                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-4 block w-full p-2.5 outline-none text-gray-600" placeholder="Email" required />
+                                </div>
+                                <textarea id="message" rows="4" class="block resize-none border-0 p-2.5 w-full mt-5 font-sans text-4 text-gray-900 bg-white focus:outline-none mb-5" placeholder="Your Comment..."></textarea>
+                                <a href="">
+                                    <span class="float-left w-full h-auto text-center py-3 bg-red-500 text-white tracking-widest font-medium uppercase text-sm rounded font-sans mr-10 hover:text-black ease-in duration-300">
+                                        <i class="fa fa-location-arrow"></i>
+                                        Send Message</span>
+                                </a>
+                            </form>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+    <!-- Footer -->
+    <div class="bg-white shadow dark:bg-gray-900 mt-[90px]">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 relative">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                  <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/logo.png" class="w-24 h-6" alt="Anime Logo" />
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-[15px] font-medium text-gray-500 sm:mb-0 dark:text-gray-400 font-sans">
+                    <li>
+                        <a href="./index.html" class="hover:text-white ease-in duration-300 me-4 md:me-6">Home</a>
+                    </li>
+                    <li>
+                        <a href="./categories.html" class="hover:text-white ease-in duration-300 me-4 md:me-6">Categories</a>
+                    </li>
+                    <li>
+                        <a href="./our-blog.html" class="hover:text-white ease-in duration-300 me-4 md:me-6">Our Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white ease-in duration-300">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 font-sans">
+              Copyright ©2024 All rights reserved | This template is made with 
+              <i class="fa fa-heart"></i> by 
+              <a href="" class="text-blue-700 hover:text-white ease-in duration-300">Colorlib</a>
+            </span>
+          <div class="absolute top-[-25px] left-1/2">
+              <div class="bg-red-500 w-[50px] h-[50px] rounded-full flex justify-center items-center">
+                <a href="" class="">
+                  <svg class="w-4 h-4 text-gray-800 dark:text-white hover:text-black ease-in duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
+                </svg>
+                </a>
+              </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/db6ac4acea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Anime | Template</title>
+</head>
+<body class="background-color-body font-serif relative">
+    <!-- Header -->
+    <div>
+        <nav class="bg-white border-slate-200 dark:bg-slate-900 dark:border-slate-700">
+            <div class="h-16 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
+                    <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/logo.png" class="w-24,h-6" alt="Anime Logo" />
+                    </a>
+              <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+              <div class="hidden w-full h-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="h-16 flex flex-col font-semibold p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li class="my-auto">
+                    <li class="my-auto">
+                        <a href="./index.html" class="block py-2 px-3 text-gray-300 rounded hover:text-white ease-in duration-300 md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-300 md:dark:hover:text-red-500 dark:hover:text-white dark:hover:
+                        text-gray-300 md:dark:hover:text-white font-sans text-[18px]" >Homepage</a>
+                      </li>
+                  </li>
+                  <li class="my-auto group relative">
+                      <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-400 ease-in duration-300 rounded hover:text-white md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-300 md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700  md:dark:hover:text-white font-sans text-[18px]">Categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg></button>
+                      <!-- Dropdown menu -->
+                      <div id="dropdownNavbar" class="absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-white dark:divide-gray-600 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 mt-5">
+                          <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                            <li>
+                              <a href="./categories.html" class="block px-4 py-2 text-black font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ease-in duration-300 font-sans">Categories</a>
+                            </li>
+                            <li>
+                              <a href="./anime-details.html" class="block px-4 py-2 text-black font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ease-in duration-300 font-sans">Anime Details</a>
+                            </li>
+                            <li>
+                              <a href="./anime-watching.html" class="block px-4 py-2 text-black font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ease-in duration-300 font-sans">Anime Watching</a>
+                            </li>
+                            <li>
+                                <a href="./blog-detail.html" class="block px-4 py-2 text-black font-medium hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ease-in duration-300 font-sans">Blog Details</a>
+                              </li>
+                          </ul>
+                          <div class="py-1">
+                            <a href="./sign-up.html" class="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-500 dark:hover:text-white ease-in duration-300 font-sans">Sign up</a>
+                            <a href="./login.html" class="block px-4 py-2 text-sm text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-500 dark:hover:text-white ease-in duration-300 font-sans">Login</a>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="my-auto">
+                    <a href="#" class="block py-2 px-3 text-gray-300 bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 md:dark:text-red-500 dark:bg-red-600 md:dark:bg-transparent font-sans text-[18px]" aria-current="page">Our Blog</a>
+                  </li>
+                  <li class="my-auto">
+                    <a href="#" class="block py-2 px-3 text-gray-300 rounded hover:text-white ease-in duration-300 md:border-0 md:hover:text-red-700 md:p-0 dark:text-gray-300 md:dark:hover:text-red-500 dark:hover:text-white dark:hover:
+                    text-gray-300 md:dark:hover:text-white font-sans text-[18px]">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <div class="my-2 flex px-4 py-3 rounded-md border-2 border-blue-500 overflow-hidden max-w-md mx-auto font-[sans-serif]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
+                      class=" fill-slate-500 mr-3 rotate-90">
+                      <path
+                        d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+                      </path>
+                    </svg>
+                    <input type="email" placeholder="Search Here..." class="w-full outline-none bg-transparent text-white text-sm" />
+                </div> 
+              </div>
+              <div class="h-full py-5">
+                <a href="./login.html">
+                    <i class="fa-solid fa-user text-white"></i>
+                </a>
+              </div>
+            </div>
+        </nav>  
+    </div>
+    <!-- Banner -->
+     <div class="max-sm:h-[300px]">
+        <div class="w-full relative h-full">
+            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/normal-breadcrumb.jpg" alt="" class="w-full h-full object-cover">
+            <div class="max-w-screen-xl mx-auto text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-fll">
+                <h1 class="text-white font-sans font-bold text-[48px]">Our Blog</h1>
+                <p class="text-white font-sans text-[24px] pt-[22px]">Welcome to the offical Anime blog.</p>
+            </div>
+         </div>
+     </div>
+     <!-- Content Image -->
+      <div class="max-w-screen-xl mx-auto sm:px-4 lg:px-4 mt-[70px] max-sm:px-4">
+        <div class="w-full h-full">
+            <div class="max-w-[1170px] flex flex-row gap-2 max-sm:flex-col ">
+                <!-- Left -->
+                 <div class="w-1/2 max-sm:w-full">
+                    <div class="mb-4 relative">
+                        <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-1.jpg" alt="" class="w-auto h-auto">
+                        <div class="w-full text-center absolute bottom-24 max-sm:bottom-10">
+                            <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                            <h3 class="text-white font-bold font-sans text-[24px]">Yuri Kuma Arashi Viverra Tortor Pharetra</h3>
+                        </div>
+                    </div>
+                    <div class="mb-4 flex flex-col sm:flex-row gap-2 max-sm:w-full">
+                        <div class="w-full sm:w-1/2 relative">
+                            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-4.jpg" alt="" class="w-full h-full">
+                            <div class="max-w-[200px] mx-auto text-center absolute bottom-10 left-10 max-sm:max-w-full">
+                                <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                                <h3 class="text-white font-bold font-sans text-[16px] max-sm:text-[24px]">Bok no Hero Academia Season 4 – 18</h3>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 relative max-sm:w-full">
+                            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-5.jpg" alt="" class="w-auto h-auto max-sm:w-full">
+                            <div class="max-w-[200px] mx-auto text-center absolute bottom-10 left-10 max-sm:max-w-full">
+                                <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                                <h3 class="text-white font-bold font-sans text-[16px] max-sm:text-[24px]">Bok no Hero Academia Season 4 – 18</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 relative max-sm:w-full">
+                        <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-7.jpg" alt="" class="w-auto h-auto">
+                        <div class="w-full text-center absolute bottom-24 max-sm:bottom-10">
+                            <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                            <h3 class="text-white font-bold font-sans text-[24px]">Housekishou Richard shi no Nazo Kantei Season 08 - 20</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-2 max-sm:w-full ">
+                        <div class="w-full sm:w-1/2 relative">
+                            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-10.jpg" alt="" class="w-full h-full">
+                            <div class="max-w-[200px] mx-auto text-center absolute bottom-10 left-10 max-sm:max-w-full">
+                                <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                                <h3 class="text-white font-bold font-sans text-[16px] max-sm:text-[24px]">Bok no Hero Academia Season 4 – 18</h3>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 relative max-sm:w-full ">
+                            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-11.jpg" alt="" class="w-full h-full">
+                            <div class="max-w-[200px] mx-auto text-center absolute bottom-10 left-10 max-sm:max-w-full">
+                                <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                                <h3 class="text-white font-bold font-sans text-[16px] max-sm:text-[24px]">Bok no Hero Academia Season 4 – 18</h3>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Right  -->
+                <div class="w-1/2 max-sm:w-full">
+                    <div class="flex flex-col sm:flex-row gap-2 max-sm:">
+                        <div class="w-full sm:w-1/2 relative">
+                            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-2.jpg" alt="" class="w-full h-full">
+                            <div class="max-w-[200px] mx-auto text-center absolute bottom-10 left-10 max-sm:max-w-full">
+                                <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1 max-sm:max-w-full"></i> 01 March 2020</h4>
+                                <h3 class="text-white font-bold font-sans text-[16px] max-sm:text-[24px]">Bok no Hero Academia Season 4 – 18</h3>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 relative max-sm:">
+                            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-3.jpg" alt="" class="w-full h-full">
+                            <div class="max-w-[200px] mx-auto text-center absolute bottom-10 left-10 max-sm:max-w-full">
+                                <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1 max-sm:max-w-full"></i> 01 March 2020</h4>
+                                <h3 class="text-white font-bold font-sans text-[16px] max-sm:text-[24px]">Bok no Hero Academia Season 4 – 18</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 relative mt-4">
+                        <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-6.jpg" alt="" class="w-full h-full">
+                        <div class="w-full text-center absolute bottom-24 max-sm:bottom-10">
+                            <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                            <h3 class="text-white font-bold font-sans text-[24px]">Housekishou Richard shi no Nazo Kantei Season 08 - 20</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <div class="w-full sm:w-1/2 relative">
+                            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-8.jpg" alt="" class="w-full h-full">
+                            <div class="max-w-[200px] mx-auto text-center absolute bottom-10 left-10 max-sm:max-w-full">
+                                <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                                <h3 class="text-white font-bold font-sans text-[16px] max-sm:text-[24px]">Bok no Hero Academia Season 4 – 18</h3>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 relative max-sm:w-full">
+                            <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-9.jpg" alt="" class="w-full h-full">
+                            <div class="max-w-[200px] mx-auto text-center absolute bottom-10 left-10 max-sm:max-w-full">
+                                <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                                <h3 class="text-white font-bold font-sans text-[16px] max-sm:text-[24px]">Bok no Hero Academia Season 4 – 18</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 relative">
+                        <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/blog/blog-12.jpg" alt="" class="w-full h-full">
+                        <div class="w-full text-center absolute bottom-24 max-sm:bottom-10">
+                            <h4 class="text-white font-sans mb-5"><i class="fa-solid fa-calendar text-red-500 mr-1"></i> 01 March 2020</h4>
+                            <h3 class="text-white font-bold font-sans text-[24px]">Yuri Kuma Arashi Viverra Tortor Pharetra</h3>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+      </div>
+    <!-- Footer -->
+    <div class="bg-white shadow dark:bg-gray-900 mt-[90px]">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 relative">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                  <img src="https://incandescent-trifle-053f2f.netlify.app/anime-main/img/logo.png" class="w-24 h-6" alt="Anime Logo" />
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-[15px] font-medium text-gray-500 sm:mb-0 dark:text-gray-400 font-sans">
+                    <li>
+                        <a href="./index.html" class="hover:text-white ease-in duration-300 me-4 md:me-6">Home</a>
+                    </li>
+                    <li>
+                        <a href="./categories.html" class="hover:text-white ease-in duration-300 me-4 md:me-6">Categories</a>
+                    </li>
+                    <li>
+                        <a href="./our-blog.html" class="hover:text-white ease-in duration-300 me-4 md:me-6">Our Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-white ease-in duration-300">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 font-sans">
+              Copyright ©2024 All rights reserved | This template is made with 
+              <i class="fa fa-heart"></i> by 
+              <a href="" class="text-blue-700 hover:text-white ease-in duration-300">Colorlib</a>
+            </span>
+          <div class="absolute top-[-25px] left-1/2">
+              <div class="bg-red-500 w-[50px] h-[50px] rounded-full flex justify-center items-center">
+                <a href="" class="">
+                  <svg class="w-4 h-4 text-gray-800 dark:text-white hover:text-black ease-in duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
+                </svg>
+                </a>
+              </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
